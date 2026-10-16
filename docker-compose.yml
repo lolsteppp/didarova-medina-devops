@@ -1,0 +1,13 @@
+services:
+  app:
+    build: .
+    image: didarova-medina-devops
+    container_name: didarova-medina-container
+    ports:
+      - "8080:8080"
+    environment:
+      STUDENT_NAME: Medina
+      STUDENT_SURNAME: Didarova
+      STUDENT_GROUP: IT2-2313
+      STUDENT_ID: "37944"
+      KEEP_ALIVE: "true"
